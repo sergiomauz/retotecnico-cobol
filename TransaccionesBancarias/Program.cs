@@ -8,7 +8,7 @@ var directorioSolucion = Directory.GetParent(Directory.GetCurrentDirectory())?.P
 // Obtener ruta del archivo. Con fines de depuracion siempre estará en la misma carpeta que la solucion
 var directorioArchivoCsv = Path.Combine(directorioSolucion ?? "", "transacciones.csv");
 
-// Iniciar variables y eer archivo y procesarlo a memoria
+// Iniciar variables y leer archivo y procesarlo a memoria
 var conteoCreditos = 0;
 var conteoDebitos = 0;
 var balanceFinal = 0.0;
@@ -20,6 +20,7 @@ if (File.Exists(directorioArchivoCsv))
     {
         using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
         {
+            //Recorrer los registros del archivo CSV
             var records = csv.GetRecords<Transaccion>().ToList();
             foreach (var record in records)
             {
