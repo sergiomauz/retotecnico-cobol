@@ -3,7 +3,7 @@ using System.Globalization;
 
 
 // Obtener directorio del proyecto
-var directorioSolucion = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.Parent?.FullName;
+var directorioSolucion = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName;
 
 // Obtener ruta del archivo. Con fines de depuracion siempre estará en la misma carpeta que la solucion
 var directorioArchivoCsv = Path.Combine(directorioSolucion ?? "", "transacciones.csv");
