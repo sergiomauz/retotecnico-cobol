@@ -6,7 +6,7 @@ using System.Globalization;
 var directorioSolucion = Directory.GetParent(Directory.GetCurrentDirectory())?.Parent?.Parent?.FullName;
 
 // Obtener ruta del archivo. Con fines de depuracion siempre estará en la misma carpeta que la solucion
-var directorioArchivoCsv = Path.Combine(directorioSolucion ?? "", "transacciones.csv");
+var directorioArchivoCsv = Path.Combine(directorioSolucion ?? "", "data.csv");
 
 // Iniciar variables y leer archivo y procesarlo a memoria
 var conteoCreditos = 0;
