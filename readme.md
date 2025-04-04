@@ -1,4 +1,4 @@
-﻿# RETO TÉCNICO COBOL
+﻿# Reto Técnico: Procesamiento de Transacciones Bancarias (CLI)
 
 
 ## Introducción:
